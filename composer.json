@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": ">=5.6",
+        "symfony/symfony": "2.6.*",
         "paysafegroup/paysafe_sdk_php": "^1.0"
     },
     "autoload": {
