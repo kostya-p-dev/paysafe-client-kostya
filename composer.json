@@ -1,0 +1,27 @@
+{
+    "name": "renttrack/paysafe-client-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 PaysafeClientBundle.",
+    "keywords": [
+        "paysafe",
+        "payment",
+        "checkout"
+    ],
+    "homepage": "https://github.com/Credit-Jeeves/PaysafeClientBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Konstantin Polyakov",
+            "email": "kostya.p.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "paysafegroup/paysafe_sdk_php": "^1.0"
+    },
+    "autoload": {
+        "psr-0": {"RentTrack\\PaysafeClientBundle": ""}
+    },
+    "target-dir": "RentTrack/PaysafeClientBundle",
+    "minimum-stability": "dev"
+}
