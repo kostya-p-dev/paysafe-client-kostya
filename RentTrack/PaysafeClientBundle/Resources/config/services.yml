@@ -1,4 +1,15 @@
+parameters:
+    paysafe.api_key_id: 'paysafe_api_key_id'
+    paysafe.api_key_secret: 'paysafe_api_key_secret'
+    #env can be 'TEST' or 'LIVE'
+    paysafe.env: 'TEST'
+    paysafe.account_number: 'account_number'
+
 services:
-#    rent_track_paysafe_client.example:
-#        class: RentTrack\PaysafeClientBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
+    rent_track_paysafe_client:
+        class: RentTrack\PaysafeClientBundle\PaysafeClient
+        arguments:
+            - '%paysafe.api_key_id%'
+            - '%paysafe.api_key_secret%'
+            - '%paysafe.env%'
+            - '%paysafe.account_number%'

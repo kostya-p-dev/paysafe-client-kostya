@@ -15,10 +15,15 @@
             "email": "kostya.p.dev@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:kostya-p-dev/paysafe_sdk_php.git"
+        }
+    ],
     "require": {
         "php": ">=5.6",
-        "symfony/framework-bundle": "2.*",
-        "paysafegroup/paysafe_sdk_php": "^1.0"
+        "paysafegroup/paysafe_sdk_php": "dev-master"
     },
     "autoload": {
         "psr-0": {"RentTrack\\PaysafeClientBundle": ""}
